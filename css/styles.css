@@ -75,16 +75,19 @@ p {
     z-index: 2;
   }
 }
+
 h2.slogan {
   font-size: 24px;
   color: #7d0808;
   font-style: italic;
   /* Add more styles as needed */
 }
+
 .italic-date {
   font-style: italic;
   color: #891818; /* Replace with your desired color */
 }
+
 .header__logo-img {
   height: 40px;
 }
@@ -226,7 +229,7 @@ h2.slogan {
   .team-img-thumb > img {
     display: block;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
   }
 
@@ -284,27 +287,17 @@ h2.slogan {
   .events-info {
     display: none;
   }
-  
-  
+
   .card.team-img-thumb .card-body {
     padding: 10px; /* Adjust the padding as needed */
   }
-  
+
   .card.team-img-thumb {
-    max-width: 350px; /* Adjust the maximum width of the card */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
-  
+
   .card.team-img-thumb img {
-    max-width: 250px; /* Adjust the maximum width of the image */
-    height: auto; /* Maintain the aspect ratio */
-    border-radius: 8%; /* Apply rounded corners */
-    margin: auto; /* Center the image horizontally */
+    height: 270px; /* Maintain the aspect ratio */
   }
-  
 }
 
 .about-us {
@@ -361,13 +354,13 @@ h2.slogan {
   }
 
   .footer-box-1 {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: var(--primary-white-color);
     border-radius: 50%;
     position: absolute;
     right: 15%;
-    bottom: 25%;
+    bottom: 35%;
   }
 
   .footer-box-2 {
@@ -574,17 +567,13 @@ h2.slogan {
 ::-webkit-scrollbar-track {
   background: var(--primary-grey-color);
 }
-.objectives-container {
-  display: flex;
-  justify-content: space-around; /* Sau space-evenly pentru un spațiu și mai mic */
-  align-items: center;
-  margin-top: 50px;
-}
 
 .objective-circle {
-  width: 300px; /* Mai mare decât 200px */
-  height: 300px; /* Mai mare decât 200px */
-  border-radius: 10%;
+  display: block;
+  width: 100%;
+  height: 360px; /* Mai mare decât 200px */
+  padding: 20px;
+  border-radius: 50px;
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7); /* Rama roșie */
   text-align: center;
@@ -592,7 +581,7 @@ h2.slogan {
 }
 
 .objective-circle:hover {
-  transform: scale(1.1); /* Mărește la hover (zoom in) */
+  transform: scale(0.9); /* Mărește la hover (zoom in) */
 }
 
 .objective-circle img {
@@ -622,26 +611,15 @@ Intro */
   text-align: center;
 }
 
-.display-3{
-  color:#7d0808
+.display-3 {
+  color: #7d0808;
 }
 
 /* contact */
 
-
-
 /* Optionally, you can add some styles to the images for better alignment */
 
 .contact-block {
-  display: inline-block;
-  width: 30%;
-  margin-top: 100px;
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 50px;
-  margin-right: -70px;
 }
 
 .contact-info {
@@ -657,16 +635,13 @@ Intro */
   font-size: 16px;
   display: block;
   margin: 0 auto 0px; /* Center the image horizontally and reduce spacing below it */
-
 }
 .contact-block img {
   width: 50px; /* Adjust the width to make the images smaller */
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Remove any extra spacing around the image */
   margin: 0 auto 0px; /* Center the image horizontally and reduce spacing below it */
-
- 
-
+}
 /* Services */
 .services-hero {
   position: relative;
@@ -686,28 +661,6 @@ Intro */
   z-index: 1; /* Place the title above the background image */
 }
 
-.objectives-container {
-  position: relative;
-  z-index: 2; /* Place the objectives container above the background image */
-  background-color: rgba(255, 255, 255, 0.8); /* Add a background color or adjust opacity as needed */
-  padding: 40px; /* Add padding for spacing */
-  border-radius: 10px; /* Add rounded corners for the container */
-}
-
-.objective-circle1 {
-  width: 300px; /* Mai mare decât 200px */
-  height: 300px; /* Mai mare decât 200px */
-  border-radius: 10%;
-  background-color: #fff;
-  text-align: center;
-  transition: transform 0.7s; /* Zoom in/out dinamic */
-
-}
-
-
-
-
-
 /* blog */
 .photo1 img {
   max-width: 200px; /* Adjust the max width for the first photo */
@@ -725,13 +678,11 @@ Intro */
   margin-top: 50px; /* Add space between the two descriptions */
 }
 
-
 .photo img {
   max-width: 450px; /* Adjust the max width for the rest of the photos */
   height: auto;
   justify-content: center;
 }
-
 
 .photo4 {
   text-align: center; /* Alinează "photo2" în centru */
@@ -751,7 +702,3 @@ Intro */
   max-width: 350px; /* Dimensiune mai mică pentru "photo3" */
   height: auto;
 }
-
-
-/* services */
-
