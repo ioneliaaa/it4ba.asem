@@ -661,44 +661,41 @@ Intro */
   z-index: 1; /* Place the title above the background image */
 }
 
-/* blog */
-.photo1 img {
-  max-width: 200px; /* Adjust the max width for the first photo */
+/* blog*/
+/* Use flexbox for the image container to organize images neatly */
+.event-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px; /* Adjust the space between images */
+}
+
+/* Standardize image sizes for a uniform look */
+.event-photos img {
+  max-width: 100%; /* Responsive images */
   height: auto;
-  float: right; /* Align to the right */
+  margin-bottom: 10px; /* Space below images */
 }
 
-.event-description {
-  text-align: left; /* Align text to the left to match the float */
-  font-size: 20px;
-}
-.event-description1 {
-  text-align: left; /* Align text to the left to match the float */
-  font-size: 20px;
-  margin-top: 50px; /* Add space between the two descriptions */
+/* Description text styling */
+.event-description, .event-description1 {
+  font-size: 1rem; /* Use rem for scalability */
+  text-align: justify; /* Improve readability */
+  margin-top: 0.5rem; /* Adjust top margin */
 }
 
-.photo img {
-  max-width: 450px; /* Adjust the max width for the rest of the photos */
-  height: auto;
-  justify-content: center;
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .event-photos {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+  }
+
+  .photo, .photo1 {
+    width: 100%; /* Full width images on smaller screens */
+  }
 }
 
-.photo4 {
-  text-align: center; /* Alinează "photo2" în centru */
-}
-
-.photo4 img {
-  max-width: 400px; /* Dimensiune mai mică pentru "photo2" */
-  height: auto;
-}
-
-.photo3 {
-  float: right; /* Aliniere la dreapta pentru "photo3" */
-  clear: right; /* Asigură că "event-description" să nu se suprapună cu "photo3" */
-}
-
-.photo3 img {
-  max-width: 350px; /* Dimensiune mai mică pentru "photo3" */
-  height: auto;
+/* Lightbox modal styling (if implemented) */
+.modal-content img {
+  width: 100%; /* Ensure modal images are fully responsive */
 }
