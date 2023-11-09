@@ -699,3 +699,14 @@ Intro */
 .modal-content img {
   width: 100%; /* Ensure modal images are fully responsive */
 }
+/* This is the default style for larger screens */
+h3.display-4 {
+  font-size: 2.5rem; /* Adjust the size as needed for larger screens */
+}
+
+/* This media query targets screens with a maximum width of 576px, which covers most phones */
+@media (max-width: 376px) {
+  h3.display-4 {
+    font-size: 8px; /* This size will be smaller on phone screens */
+  }
+}
